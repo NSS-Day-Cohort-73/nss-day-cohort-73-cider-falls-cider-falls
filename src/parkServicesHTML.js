@@ -1,3 +1,17 @@
+import { getServices} from "./database.js"
+
+const services = getServices()
+
+export const parkServices = () => {
+    let buildServicesHTML = "<ul>"
+
+    for (const service of services) {
+        buildServicesHTML += `<li>${service.name}</li>`
+    }
+    buildServicesHTML += "</ul>"
+    return buildServicesHTML
+}
+
 // Import getServices() from database
 
 // Invoke services = getServices() and store its value
