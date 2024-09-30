@@ -1,6 +1,6 @@
 Table Guest {
   Id int [primary key]
-  AreaId int [ref: < Area.Id]
+  AreaId int [ref: > Area.Id]
   GuestName varchar
 }
 
