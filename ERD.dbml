@@ -17,6 +17,6 @@ Table Services {
 
 Table AreaServices {
   Id int
-  ServiceID int [ref: < Services.Id]
-  AreaID int [ref: < Area.Id ]
+  ServiceID int [ref: > Services.Id]
+  AreaID int [ref: > Area.Id ]
 }
