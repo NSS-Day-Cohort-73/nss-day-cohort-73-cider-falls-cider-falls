@@ -10,7 +10,7 @@ Table services {
 }
 
 
-Table events {
+Table destinationServices {
     id int [pk, increment]
     destinationId int [ref: > destinations.id]
     servicesId int [ref: > services.id]
