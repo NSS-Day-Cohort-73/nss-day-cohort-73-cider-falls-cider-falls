@@ -1,0 +1,22 @@
+Table Guest {
+  Id int [primary key]
+  AreaId int [ref: < Area.Id]
+  GuestName varchar
+}
+
+Table Area {
+  Id integer [primary key]
+  AreaName varchar
+  ServiceID int
+}
+
+Table Services {
+  Id integer [primary key]
+  ServiceName varchar
+}
+
+Table AreaServices {
+  Id int
+  ServiceID int [ref: < Services.Id]
+  AreaID int [ref: < Area.Id ]
+}
