@@ -1,6 +1,6 @@
 import { getParkInfo } from "./database.js";
 
-const park = getParkInfo()
+const park = getParkInfo()[0]
 
 //park logo and park name in the header
 
