@@ -1,10 +1,11 @@
 // Import getAreas() from database
-import { getAreas, getAreaServices, getServices } from "./database.js";
+import { getAreas, getAreaServices, getServices, getGuests } from "./database.js";
 
 // Invoke areas = getAreas() and store its value
 const areas = getAreas()
 const areaServices = getAreaServices()
 const services = getServices()
+
 
 // Define and export the buildAreasHTML() 
 export const buildAreasHTML = () => {
@@ -17,6 +18,7 @@ export const buildAreasHTML = () => {
             <section>
                 <h3 data-id="${area.id}"
                 data-name="${area.name}"
+                data-type="area"
                 >${area.name}
                 </h3>
                 <ul>
@@ -47,6 +49,27 @@ export const buildAreasHTML = () => {
     // Return HTML string
     return areasHTML
 }
+
+document.addEventListener("click", clickEvent => {
+    let count = 0
+    const guests = getGuests()
+    const itemClicked = clickEvent.target
+
+
+    if(itemClicked.dataset.type === "area"){
+        for(let guest of guests){
+            if(guest.areaId === parseInt(itemClicked.dataset.id)){
+                count++
+
+            }
+
+        }
+        window.alert(`There are ${count} guests in this area`)
+    }
+
+
+
+})
     
 
 /* Add onclick function for when we click on an area, it displays how many
