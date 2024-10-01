@@ -11,7 +11,7 @@ export function serviceLocation (targetId) {
     
     for (const item of filteredArray) {
         const destination = destinations.find(subItem => subItem.id === item.destinationId)
-            returnArray.push(destination.location) 
+            returnArray.push(destination.title) 
     }
 
     return `Park Services: ${formatArray(returnArray)}`
