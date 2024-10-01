@@ -9,3 +9,17 @@ In this project, you are expected to start building your professional collaborat
 Here's the link to the [Github Workflow Guides](https://nashville-software-school.github.io/github-workflow/) that everyone must use during this project.
 
 You will need to clone this repository, create a project board, and create issue tickets once you have used your analytical and algorithmic thinking to define tasks. Make sure you review all articles and videos that we provide for you in the guides. You are expected to produce high quality documentation.
+
+**USER STORY (potential guest)**
+
+**As: user**  
+**When:  click on a service**   
+**Then: see what park areas offer this service**
+
+
+**As:  user** 
+**When:  click on a park area**
+**Then: see what services are offered in this park area**
+
+
+
