@@ -1,5 +1,5 @@
 // Import getGuests() from database
-import { getGuests } from "./database";
+import { getGuests } from "./database.js";
 
 // Invoke guests = getGuests() and store its value
 const guests = getGuests()
