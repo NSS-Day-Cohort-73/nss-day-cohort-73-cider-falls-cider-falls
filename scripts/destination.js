@@ -1,4 +1,4 @@
-import {getDestinations, getServices, getDestinationServices} from '.database.js'
+import {getDestinations, getServices, getDestinationServices} from './database.js'
 
 
 const destinations = getDestinations()
@@ -14,7 +14,7 @@ export const renderDestinations = (num) => {
             <div class='column'>
                 <h2
                     data-type='destination'
-                    data-id='${num}
+                    data-id='${num}'
                     data-title='${destination.title}'
                     data-location='${destination.location}'
                 >
@@ -25,7 +25,7 @@ export const renderDestinations = (num) => {
         const service = services.find(subItem => subItem.id === item.servicesId)
         servicesList.push(service.type)
     }
-    html += `<li>${servicesList.join('</li><li>')}</li></ul></div>`
+    html += `<li class='destination'>${servicesList.join('</li><li class="destination">')}</li></ul></div>`
     return html
 }
 
