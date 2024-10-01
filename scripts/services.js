@@ -1,9 +1,9 @@
-import { getServcies } from "./database.js";
+import { getServices } from "./database.js";
 
-const services = getServcies()
+const services = getServices()
 
 export const renderServices = () => {
-    let html = "<ol>"
+    let html = `<ul class="service">`
 
     for (const service of services) {
         html += `<li 
@@ -13,6 +13,6 @@ export const renderServices = () => {
         >${service.type}</li>`
     }
 
-    html += "</ol>"
+    html += "</ul>"
     return html
 }
