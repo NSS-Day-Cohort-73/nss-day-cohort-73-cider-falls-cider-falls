@@ -10,16 +10,25 @@ Here's the link to the [Github Workflow Guides](https://nashville-software-schoo
 
 You will need to clone this repository, create a project board, and create issue tickets once you have used your analytical and algorithmic thinking to define tasks. Make sure you review all articles and videos that we provide for you in the guides. You are expected to produce high quality documentation.
 
-**USER STORY (potential guest)**
 
-**As: user**  
-**When:  click on a service**   
-**Then: see what park areas offer this service**
+**User Story**
 
+**Given: User**
+**When: a destination is clicked**
+**Then: the guest that is currently at that destination will appear in the pop up window**
 
-**As:  user** 
-**When:  click on a park area**
-**Then: see what services are offered in this park area**
+**Given:  User**
+**When:  a service is clicked**
+**Then:  the destination that that service is offered at will appear in the pop up window**
 
+**database module (database.js):  destinations, services, guests**
+**database fun : getDestinations, getServices, getGuests**
 
+**guests module: (guests.js)**
+**guest fun: guestList**
 
+**services module: (services.js)** 
+**services fun: serviceList**
+
+**destinations module: (destinations.js)**
+**destinations fun: destinationList**
