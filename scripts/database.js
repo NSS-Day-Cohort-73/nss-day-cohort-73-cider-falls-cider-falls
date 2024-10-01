@@ -76,7 +76,7 @@ const database = {
     return database.destinations.map(destination => ({...destination}))
 }
 
-export const getEmployees = () => {
+export const getServcies = () => {
     return database.services.map(service => ({...service}))
 }
 
