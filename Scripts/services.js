@@ -3,13 +3,13 @@ import { getServices } from "./database.js"
 const useServices = getServices() 
 
 export const serviceList = () => {
-    let serviceHTML = `<ul id="serviceList">`
+    let serviceHTML = `<article id="serviceList"> Park Services: `
 
     for (const service of useServices) {
-        serviceHTML += `<li class="service">
+        serviceHTML += `
         ${service.name}
-        </li>`
+        `
     }
-    serviceHTML += `</ul>`
+    serviceHTML += `</article>`
     return serviceHTML
 }
