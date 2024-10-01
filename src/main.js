@@ -17,14 +17,14 @@ const servicesHTMLString = parkServices()
 
 // Build HTML structure
 const fullHTMLString = `
-	<header id="park-header">
+	<h2 id="park-header">
 		<div id="logo">Park Logo</div>
 		<div id="park-name">Park Name<div>
-	</header>
-	<main>
-		<div>
+	</h2>
+	<main id="mainflex">
+		<div class="flexleft">
 			<article id="services">
-				<section>Services</section>
+				<h4>Services</h4>
 				<section>
                     ${servicesHTMLString}
 				</section>
@@ -33,15 +33,15 @@ const fullHTMLString = `
                 ${areasHTMLString}
 			</article>
 		</div>
-		<div>
+		<div class="flexright">
 			<article id="guests">
-				<div>Guests</div>
+				<h4>Guests</h4>
                 ${guestsHTMLString}
 			</article>
 		</div>
 	</main>
 	<foot>
-		<div id="info-list">Phone Number ·  E-mail ·  Street Address</div>
+		<h4 id="info-list">Phone Number ·  E-mail ·  Street Address</h4>
 	</foot>
 `
 

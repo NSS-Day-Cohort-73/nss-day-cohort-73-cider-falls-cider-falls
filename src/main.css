@@ -1,0 +1,42 @@
+#mainflex {
+    display:flex;
+    justify-content:space-around;
+}
+
+.flexright {
+    display:flex;
+}
+
+#services {
+    display:flex;
+    flex-direction:column;
+}
+
+#areas {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+foot {
+    text-align:center;
+}
+
+#park-header {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+#logo {
+    padding: 30px;
+    width: 30%;
+}
+
+#park-name {
+    text-align:center;
+    padding: 30px;
+    width: 70%;
+}

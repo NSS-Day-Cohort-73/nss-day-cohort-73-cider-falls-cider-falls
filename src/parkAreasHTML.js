@@ -15,10 +15,10 @@ export const buildAreasHTML = () => {
         // Create opening section and list tags + area name header"
         areasHTML += `
             <section>
-                <div data-id="${area.id}"
+                <h3 data-id="${area.id}"
                 data-name="${area.name}"
                 >${area.name}
-                </div>
+                </h3>
                 <ul>
         `
 
