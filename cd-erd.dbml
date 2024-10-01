@@ -1,4 +1,4 @@
-Table ParkAreas {
+Table Destinations {
     id int [pk]
     name varchar 
     location varchar
@@ -12,16 +12,16 @@ Table Services {
 Table Guests {
     id int [pk]
     name varchar
-    ParkAreasId int
+    DestinationsId int
 }
-Table ServicesParkAreas {
+Table ServicesDestinations {
     id int [pk]
-    ParkAreasId int
+    DestinationsId int
     ServicesId int
     
 }
 
 
-ref: Guests.ParkAreasId > ParkAreas.id 
-ref: ServicesParkAreas.ParkAreasId > ParkAreas.id
-ref: ServicesParkAreas.ServicesId > Services.id
+ref: Guests.DestinationsId > Destinations.id 
+ref: ServicesDestinations.DestinationsId > Destinations.id
+ref: ServicesDestinations.ServicesId > Services.id
